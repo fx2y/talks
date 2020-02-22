@@ -1,0 +1,570 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "mdkdJ5AEsRoEQDZMREkGS",
+      "type": "rectangle",
+      "x": 241.4453125,
+      "y": 124.84375,
+      "width": 112.63671875,
+      "height": 59.94921875,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 334839524,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "Lfjj8sNJokDn4FVVOiaK-",
+      "type": "text",
+      "x": 243.7734375,
+      "y": 132.783203125,
+      "width": 105,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2132765948,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Planning &\nproject setup",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "oo5cpr_VQ081Ia__J-RpK",
+      "type": "line",
+      "x": 364.1640625,
+      "y": 121.35546875,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 776748981,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.23046875,
+          62.7109375
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 2,
+      "canvasOffsetY": 2
+    },
+    {
+      "id": "9tGeV55vz9pRfNxee2_L9",
+      "type": "arrow",
+      "x": 363.7109375,
+      "y": 152.8984375,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1517697934,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          31.3046875,
+          1.234375
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "3VKc8ou_q1941zvwpwnLS",
+      "type": "text",
+      "x": 397.69921875,
+      "y": 125.7734375,
+      "width": 293,
+      "height": 60,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1182423523,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Decide to work on pose estimation\n* Determine requirements & goals\n* Allocate resources",
+      "font": "16px Virgil",
+      "baseline": 54
+    },
+    {
+      "id": "QwiWYguydS3b4qwX88g22",
+      "type": "text",
+      "x": 225.62890625,
+      "y": 214.9609375,
+      "width": 144,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 887988020,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Data collection &\nlabeling",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "Y-Ztsp_b7zcq6u_R35gSY",
+      "type": "rectangle",
+      "x": 223.27734375,
+      "y": 210.32421875,
+      "width": 152.375,
+      "height": 49.5546875,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1602378146,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "3aeboBEstXb48cKv1mZqo",
+      "type": "arrow",
+      "x": 291.09765625,
+      "y": 184.984375,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 598734793,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          20.23046875
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "y__5cQKFeA5g3nJHANSyq",
+      "type": "line",
+      "x": 386.984375,
+      "y": 207.32421875,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1874550748,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -0.21484375,
+          57.46875
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 2
+    },
+    {
+      "id": "C1ch85t80vlX47Q2UqV95",
+      "type": "arrow",
+      "x": 389.59375,
+      "y": 229.72265625,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1208742155,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          29.78515625,
+          3.62890625
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "STwqVZ4eWyn3GTXfvnOvH",
+      "type": "text",
+      "x": 420.02734375,
+      "y": 196.0234375,
+      "width": 285,
+      "height": 80,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1996334242,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Collect training objects\n* Set up sensors (e.g., cameras)\n* Capture images of objects\n* Annotate with ground truth (how?)",
+      "font": "16px Virgil",
+      "baseline": 74
+    },
+    {
+      "id": "JA2YVojuq5YjzK2IIHAeT",
+      "type": "text",
+      "x": 251.6484375,
+      "y": 295.19921875,
+      "width": 79,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1148225663,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Training &\ndebugging",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "bLXScyHF_NxxXcrSRG7ss",
+      "type": "rectangle",
+      "x": 243.08984375,
+      "y": 293.80859375,
+      "width": 99.0546875,
+      "height": 48.69140625,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 578682282,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "S5mnBIizncm1I3EzTcB6g",
+      "type": "arrow",
+      "x": 294.27734375,
+      "y": 261.44140625,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 657696006,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          29.2890625
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "HxMYTtQFb-DMZoHLdV4nI",
+      "type": "line",
+      "x": 356.515625,
+      "y": 291.2265625,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2072223920,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.04296875,
+          53.13671875
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 2,
+      "canvasOffsetY": 2
+    },
+    {
+      "id": "58LWmZFO3KAQBOzElYFUs",
+      "type": "arrow",
+      "x": 363.4765625,
+      "y": 316.57421875,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2131654113,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          27.1015625,
+          -0.51171875
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 2
+    },
+    {
+      "id": "tJhi_rBlb2Q7QZTIMOToB",
+      "type": "text",
+      "x": 396.60546875,
+      "y": 278.69921875,
+      "width": 250,
+      "height": 80,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 801479072,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Implement baseline in OpenCV\n* Find SoTA model & reproduce\n* Debug our implementation\n* Improve model for our task",
+      "font": "16px Virgil",
+      "baseline": 74
+    },
+    {
+      "id": "TLcOUDu1lqR6im3XNwrRc",
+      "type": "text",
+      "x": 244.578125,
+      "y": 367.73828125,
+      "width": 95,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1384547614,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Deploying &\ntesting",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "RQJrotLiNRdTELd8IvVPJ",
+      "type": "rectangle",
+      "x": 238.4140625,
+      "y": 363.46875,
+      "width": 105.96484375,
+      "height": 56.00390625,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1031280438,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "e_giCeOlUS9I0zHHGH_VJ",
+      "type": "arrow",
+      "x": 290.609375,
+      "y": 343.60546875,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1495778362,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          3.1171875,
+          18.26953125
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 2
+    },
+    {
+      "id": "AKUNg0YCjjxvYEuzTW0xt",
+      "type": "line",
+      "x": 355.9140625,
+      "y": 364.3984375,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1473545955,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.1953125,
+          57.58203125
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "S_eBLIB1eHxSGBmxz7X4U",
+      "type": "arrow",
+      "x": 360.12890625,
+      "y": 393.1640625,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 537433873,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          15.84765625,
+          0.97265625
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "q4m6yCiOBZurevEMDLPYM",
+      "type": "text",
+      "x": 380.84375,
+      "y": 365.6015625,
+      "width": 293,
+      "height": 60,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 702204348,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Pilot in grasping system in the lab\n* Write tests to prevent regressions\n* Roll out in production",
+      "font": "16px Virgil",
+      "baseline": 54
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

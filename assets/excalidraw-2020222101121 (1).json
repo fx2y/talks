@@ -1,0 +1,528 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "mdkdJ5AEsRoEQDZMREkGS",
+      "type": "rectangle",
+      "x": 241.4453125,
+      "y": 124.84375,
+      "width": 112.63671875,
+      "height": 59.94921875,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 334839524,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "Lfjj8sNJokDn4FVVOiaK-",
+      "type": "text",
+      "x": 243.7734375,
+      "y": 132.783203125,
+      "width": 105,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2132765948,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Planning &\nproject setup",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "QwiWYguydS3b4qwX88g22",
+      "type": "text",
+      "x": 225.62890625,
+      "y": 214.9609375,
+      "width": 144,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 887988020,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Data collection &\nlabeling",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "Y-Ztsp_b7zcq6u_R35gSY",
+      "type": "rectangle",
+      "x": 223.27734375,
+      "y": 210.32421875,
+      "width": 152.375,
+      "height": 49.5546875,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1602378146,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "3aeboBEstXb48cKv1mZqo",
+      "type": "arrow",
+      "x": 291.09765625,
+      "y": 184.984375,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 598734793,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          20.23046875
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "JA2YVojuq5YjzK2IIHAeT",
+      "type": "text",
+      "x": 251.6484375,
+      "y": 295.19921875,
+      "width": 79,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1148225663,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Training &\ndebugging",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "bLXScyHF_NxxXcrSRG7ss",
+      "type": "rectangle",
+      "x": 243.08984375,
+      "y": 293.80859375,
+      "width": 99.0546875,
+      "height": 48.69140625,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 578682282,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "S5mnBIizncm1I3EzTcB6g",
+      "type": "arrow",
+      "x": 294.27734375,
+      "y": 261.44140625,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 657696006,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          29.2890625
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "TLcOUDu1lqR6im3XNwrRc",
+      "type": "text",
+      "x": 244.578125,
+      "y": 367.73828125,
+      "width": 95,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1384547614,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "Deploying &\ntesting",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "RQJrotLiNRdTELd8IvVPJ",
+      "type": "rectangle",
+      "x": 238.4140625,
+      "y": 363.46875,
+      "width": 105.96484375,
+      "height": 56.00390625,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1031280438,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0
+    },
+    {
+      "id": "e_giCeOlUS9I0zHHGH_VJ",
+      "type": "arrow",
+      "x": 290.609375,
+      "y": 343.60546875,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1495778362,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          3.1171875,
+          18.26953125
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 2
+    },
+    {
+      "id": "WrR90o0uhCXHveu1dKJkb",
+      "type": "arrow",
+      "x": 383.1171875,
+      "y": 235.7421875,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 419791790,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          11.1953125,
+          -52.109375
+        ],
+        [
+          -21.7734375,
+          -81.2265625
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 44,
+      "canvasOffsetY": 162
+    },
+    {
+      "id": "27fziDFE_yu5E3ghFWfUu",
+      "type": "text",
+      "x": 400.015625,
+      "y": 149.4140625,
+      "width": 289,
+      "height": 80,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1527740668,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Too hard to get data\n* Easier to label a different task\n  (e.g., hard to annotate pose, easier\n  to annotate per-pixel segmentation)",
+      "font": "16px Virgil",
+      "baseline": 74
+    },
+    {
+      "id": "rTnJLA0AmENs5ucWq3a-b",
+      "type": "arrow",
+      "x": 352.01171875,
+      "y": 314.6640625,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2099651958,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          62.71484375,
+          -34.33984375
+        ],
+        [
+          31.9296875,
+          -72.47265625
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 2,
+      "canvasOffsetY": 144
+    },
+    {
+      "id": "qrFY8CR6BgWSTlHDr68vl",
+      "type": "text",
+      "x": 422.02734375,
+      "y": 256.79296875,
+      "width": 280,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1633761394,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Collect more data\n* Realize data labeling is unreliable",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "xvLodqqEF9Hly6zJVzkxa",
+      "type": "arrow",
+      "x": 236.34765625,
+      "y": 320.26953125,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 918726414,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -49.5078125,
+          -96.03125
+        ],
+        [
+          -0.69140625,
+          -169.24609375
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 98,
+      "canvasOffsetY": 340
+    },
+    {
+      "id": "tXrEECVoJnqPNYTRcGkG4",
+      "type": "text",
+      "x": -105.0859375,
+      "y": 195.9140625,
+      "width": 282,
+      "height": 80,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1608699105,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Realize task is too hard\n* Requirements trade off with each\n  other - revisit which are most\n  important",
+      "font": "16px Virgil",
+      "baseline": 74
+    },
+    {
+      "id": "6XWsoGQEV9dF8m_OLbSAD",
+      "type": "arrow",
+      "x": 351.42578125,
+      "y": 398.63671875,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1249984558,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          23.875,
+          -41.27734375
+        ],
+        [
+          3.62890625,
+          -74.69140625
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 2,
+      "canvasOffsetY": 150
+    },
+    {
+      "id": "7BU7HBBmPmzpodtAoIVKE",
+      "type": "text",
+      "x": 383.44921875,
+      "y": 340.55859375,
+      "width": 265,
+      "height": 40,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 685672640,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Doesn't work in the lab - keep\n  improving accuracy of model",
+      "font": "16px Virgil",
+      "baseline": 34
+    },
+    {
+      "id": "RHlsCqbttuyFLfzAwk3oX",
+      "type": "arrow",
+      "x": 230.08984375,
+      "y": 391.73828125,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 933855051,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -35.11328125,
+          -96.2578125
+        ],
+        [
+          -14.6875,
+          -158.7734375
+        ]
+      ],
+      "canvasZoom": 1,
+      "canvasOffsetX": 72,
+      "canvasOffsetY": 316
+    },
+    {
+      "id": "y0HJKgK4Kx35Tus23nJb9",
+      "type": "text",
+      "x": -45.66015625,
+      "y": 277.46875,
+      "width": 228,
+      "height": 100,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1076821117,
+      "points": [],
+      "canvasZoom": 1,
+      "canvasOffsetX": 0,
+      "canvasOffsetY": 0,
+      "text": "* Fix data mismatch between\n  training data and data seen\n  in deployment\n* Collect more data\n* Mine hard cases",
+      "font": "16px Virgil",
+      "baseline": 94
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

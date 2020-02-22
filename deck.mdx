@@ -3,150 +3,1270 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-import { github, vsDark } from "@code-surfer/themes";
+import { github } from "@code-surfer/themes";
 
-export const theme = vsDark;
+import nnImg from './assets/1_6EB1Xue1wM_QP0IIzXphQA.png'
 
-# Hello 👋
+export const theme = github;
 
-You are using [MDX Deck](https://github.com/jxnblk/mdx-deck) and [Code Surfer](https://codesurfer.pomb.us)
+# Software 2.0 with Go
+
+---
+
+<Steps>
+
+* :family: := :man: :woman: :baby:
+* :house: := MLG
+* :office: := SpaceStock
+* :rewind: :office: := Ice House -> DANA -> OnTel AB
+
+</Steps>
+
+---
+
+<Steps>
+
+* @ Ice House (3.5 yr)
+    * Ruby on Rails + MySQL + Redis
+    * ElasticSearh + Salesforce + AWS
+    * Scala + Play + Akka + Cassandra
+    * Python Flask
+    * Go + PostgreSQL
+* @ DANA (8 mo)
+    * Java Spring + MySQL + Aliyun
+* @ OnTel AB (5 mo)
+    * Python + React + Kafka + RocksDB
+* @ SpaceStock (2 mo)
+    * Go + MongoDB + ElasticSearch
+
+</Steps>
+
+---
+
+## Software 2.0 with Go
+
+<Steps>
+
+1. Software 2.0
+2. Software 1.0 -> Software 2.0
+3. Lifecycle of Software 2.0 Project
+4. Infrastructure and Tooling
+5. Python is the King, Go can be the Minister
+6. Go Case Study: Data Processing Pipeline
+
+</Steps>
+
+---
+
+## Software 2.0
+
+<img src={nnImg} />
+
+<Notes>
+- neural network as another tool ml toolbox -> has pros and cons -> miss forest for tree -> neural network represent fundamental shift how write software -> software 2.0
+</Notes>
+
+---
+
+## Software 2.0 vs 1.0
+
+<Notes>
+- classical sw 1.0 -> explicit instruction to computer written by programmer -> write each line of code -> specific point in program space -> desirable behavior
+- sw 2.0 -> more abstract + human unfriendly (weight of NN)
+- specify some goal on behavior desirable program (satisfy dataset of i/o) -> write skeleton of core (NN architecture) + identify subset of program space to search -> use computation res search this space. ex: restrict search for subset of program space where search is efficiently impl with backprop + SGD
+- large portion of real world problem -> significantly easier to collect data + identify desirable behavior than explicitly write program
+</Notes>
+
+---
+
+## Programmer 2.0 vs 1.0
+
+- 2.0: curate + maintain + massage + clean + label dataset
+- 1.0: maintain tools + analytics + visualization + labeling interface + infrastructure + training code
+
+<Notes>
+- programmer 2.0 manually curate + maintain + massage + clean + label dataset -> each labeled example program final system since dataset compiled into software 2.0 via optimization
+- programmer 1.0 maintain tools + analytics + visualization + labeling interface + infra + training code
+</Notes>
+
+---
+
+## Transition
+
+<Steps>
+
+- Visual Recognition
+- Speech Recoginition
+- Speech Synthesis
+- Machine Translation
+- Games
+- Databases
+
+</Steps>
+
+<Notes>
+- visual recognition -> old: eng feature with ML on top (eg SVM). new: visual feat by obtaining large dataset (imagenet) + search space CNN arch
+- speech recognition -> old: lot preprocess + gaussian mixture + hmm. today: entirely neural net
+- speech synthesis -> stitching mechanism. today: large convnet produce raw audio signal output
+- machine translation -> old: phrase-based statistical tech. today: NN + weakly supervised / unsupervised
+- game -> old: handcoded. today: convnet
+- db -> case of learned index replace core component of dbms with neural net outperform cache-optimized b-trees
+</Notes>
+
+---
+
+## Case Study: Databases
+
+---
+
+## Benefit of S/W 2.0
+
+- Work better in practice
+- Computationally homogeneous
+- Simple to bake into silicon
+- Constant running time
+- Constant memory use
+- Highly portable
+- Agile
+- Module can meld into optimal whole
+- Better than you
+
+---
+
+## Limitation of S/W 2.0
+
+- Magic
+- Fail in unintuitive way
+- Adversarial attack
+
+---
+
+## Programming 2.0 Stack
+
+- Condition
+- Tooling
+- Opportunity
+
+<Notes>
+- SW 1.0 is code we write. SW 2.0 is code written by optimization based on eval criteria -> any setting where program isn't obvious but one can repeatedly eval perf of it will be subject to this transition -> bc optimization >>> human
+- perspective matter -> NN as SW 2.0 instead of NN as pretty good classifier
+- tooling in 1.0 code -> powerful IDE, syntax highlight + debugger + profiler + etc
+- tooling in 2.0 code -> acc + massaging + cleaning dataset
+- ex: when network fail in hard / rare case -> not fix by write code but by include more labeled example of those case
+- opportunity -> image network suspect are mislabeled / assist in labeling seeding label with prediction / suggest useful example to label based on uncertainty of network prediction
+- SW 2.0 Github -> repo = dataset + commit made up addition and edit of label
+- SW 2.0 prevalent in any domain where repeated eval is possible and cheap + algorithm is difficult to design explicitly -> in long run, AGI is written in SW 2.0
+</Notes>
+
+---
+
+## S/W 1.0 -> S/W 2.0
+
+import imgPaperMigrate from './assets/imgPaperMigrate.png'
+
+<img src={imgPaperMigrate} />
+
+---
+
+## S/W 1.0 vs S/W 2.0
+
+- S/W 1.0 -> Write code, express *how* system achieve goal
+- S/@ 2.0 -> Curating training data, spec-by-example of *what* system should do
+- Toolchain 1.0 -> Create + Validate Logic
+- Toolchain 2.0 -> Create / Curate + Validate Data
+
+---
+
+## Example: Google Email Extraction System
+
+- Learn template for B2C email
+- Use template to extract info (order number / travel date)
+- Use heuristic based with handcrafted rule
+- Lesson Learned -> Coverage of heuristic based extraction system flat for several month because too brittle to improve without introducing error
+
+---
+
+## Benefit of switching to S/W 2.0
+
+- Precision and Recall quickly surpassed result from S/W 1.0
+- Google delete 45k line of code
+- New system is easier to maintain
+    - Old system is brittle, difficult to debug error
+    - difficult to make further accuracy improvement
+- New possibility -> Cross-language word embedding to learn extraction model across several languages
+
+---
+
+## Result
+
+- machine learned > heuristic based
+    - easier to understand and improve
+- critical ingredient for software 2.0
+    - manage training data
+        - acquiring
+        - debugging
+        - versioning
+        - transforming
+
+---
+
+## Lifecycle of S/W 2.0 Project
+
+import lc_ml_proj from './assets/lifecycle-of-a-ml-project-01.png'
+
+<img src={lc_ml_proj} />
+
+---
+
+## Lifecycle of S/W 2.0 Project
+
+import lc_ml_proj2 from './assets/lifecycle-of-a-ml-project-02.png'
+
+<img src={lc_ml_proj2} />
+
+---
+
+## Lifecycle of S/W 2.0 Project
+
+import lc_ml_proj3 from './assets/lifecycle-of-a-ml-project-03.png'
+
+<img src={lc_ml_proj3} />
+
+---
+
+import lc_ml_proj4 from './assets/lifecycle-of-a-ml-project-04.png'
+
+<img src={lc_ml_proj4} />
+
+---
+
+## Lifecycle of S/W 2.0 Project
+
+import lc_ml_proj5 from './assets/lifecycle-of-a-ml-project-05.png'
+
+<img src={lc_ml_proj5} />
+
+---
+
+## Mental Model for S/W 2.0 Project
+
+- High Impact
+    - Complex parts of your pipeline
+    - Where "cheap prediction" is valuable
+    - Where automatic complicated manual process is valuable
+- Low Cost
+    - Cost is driven by:
+        - Data availability
+        - Performance requirements
+        - Problem difficulty
+
+---
+
+## Infrastructure and Tooling
+
+import infraTool from './assets/infra-tool.png'
+
+<img src={infraTool} />
+
+---
+
+## Data Management
+
+1. Data Sources
+2. Data Labeling
+3. Data Storage
+4. Data Versioning
+5. Data Processing
+
+---
+
+## Data Sources
+
+- Supervised deep learning requires a lot of labeled data
+- Labeling own data is costly
+- Here are some resources for data
+    - Open source data (good to start with, not an advantage)
+    - Data augmentation (a MUST for CV, optional for NLP)
+    - Synthetic data (worth starting with, esp. in NLP)
+
+---
+
+## Data Labeling
+
+- Requires: labeling platforms, temporary labor, and QC
+- Sources of labor:
+    - Crowdsourcing: cheap and scalable, less reliable, needs QC
+    - Hiring own annotators: less QC needed, expensive, slow to scale
+    - Data labeling service companies:
+        - FigureEight
+        
+---
+
+## Data Labeling
+
+- Labeling platforms:
+    - Diffgram: Training Data Software (CV)
+    - Prodigy: Annotation tool powered by active learning (Text + Image)
+    - HIVE: AI as a Service platform for CV
+    - Supervisely: entire CV platform
+    - Labelbox: CV
+    - Scale: AI data platform (CV & NLP)
+
+---
+
+## Data Storage
+
+- Object store: Store binary data (images, sound files, compressed texts)
+    - Amazon S3
+    - Ceph Object Store
+- Database: Store metadata (file paths, labels, user activity, etc)
+    - Postgres: right choice for most applications, best-in-class SQL
+      and great support for unstructured JSON
+
+---
+
+## Data Storage
+
+- Data Lake: aggregate features which are not obtainable from database (e.g. logs)
+    - Amazon Redshift
+- Feature Store: store, access, and share ML features
+    - FEAST
+    - Michelangelo Palette
+- At training time, copy data into local or networked filesystem (NFS)
+
+---
+
+## Data Versioning
+     
+- It's a "MUST" for deployed ML models:
+    - Deployed ML models are part code, part data.
+    - No data versioning means no model versioning.
+- Data versioning platforms:
+    - DVC: Open source version control system for ML projects
+    - Pachyderm: version control for data
+    - Dolt: versioning for SQL database
+
+---
+
+## Data Processing
+
+- Training data for production models may come from different sources,
+    - Stored data in db and object stores, log processing, and outputs of other classifiers.
+- There are dependencies between tasks,
+    - each needs to be kicked off after its dependencies are finished.
+    - For example, training on new log data, requires a preprocessing step before training.
+- Makefiles are not scalable.
+    - "Workflow manager"s become pretty essential in this regard.
+    
+---
+
+## Data Processing
+
+- Workflow orchestration:
+    - Luigi by Spotify
+    - Airflow by Airbnb: Dynamic, extensible, elegant, and scalable (the most widely used)
+        - DAG workflow
+        - Robust conditional execution: retry in case of failure
+        - Pusher supports docker images with tensorflow serving
+        - Whole workflow in a single .py file
+
+---
+
+## Development, Training, and Evaluation
+
+1. Software Engineering
+2. Resource Management
+3. Deep Learning Frameworks
+4. Experiment Management
+5. Hyperparameter Tuning
+6. Distributed Training
+
+---
+
+## Software Engineering
+
+- Winner language: Python
+- Editors:
+    - Vim / Emacs / VS Code
+    - Notebooks: Great as starting point of the projects, hard to scale
+        - nteract: a next-gen React-based UI for Jupyter notebooks
+        - Papermill: is an nteract library built for parameterizing, executing, and analyzing Jupyter Notebooks.
+        - Commuter: another nteract project which provides a read-only display of notebooks (e.g. from S3 buckets).
+    - Streamlit: interactive data science tool with applets
+
+---
+
+## Software Engineering
+
+- Compute recommendations 1:
+    - For individuals or startups:
+        - Development: a 4x Turing-architecture PC
+        - Training/Evaluation: Use the same 4x GPU PC.
+            - When running many experiments, either buy shared servers or use cloud instances.
+    - For large companies:
+        - Development: Buy a 4x Turing-architecture PC per ML scientist or let them use V100 instances
+        - Training/Evaluation: Use cloud instances with proper provisioning and handling of failures
+    
+---
+
+## Software Engineering
+    
+- Cloud Providers:
+    - GCP: option to connect GPUs to any instance + has TPUs
+    - AWS:
+
+---
+
+## Resource Management
+
+- Allocating free resources to programs
+- Resource management options:
+    - Old school cluster job scheduler ( e.g. Slurm workload manager )
+    - Docker + Kubernetes
+    - Kubeflow
+    - Polyaxon (paid features)
+
+---
+
+## Deep Learning Frameworks
+
+import dlFr from './assets/deep-learning-frameworks.png'
+
+<img src={dlFr} />
+
+---
+
+## Experiment Management
+
+- Development, training, and evaluation strategy:
+    - Always start simple
+        - Train a small model on a small batch.
+        - Only if it works, scale to larger data and models, and hyperparameter tuning!
+
+---
+
+## Experiment Management
+
+- Experiment management tools:
+    - Tensorboard
+        - provides the visualization and tooling needed for ML experimentation
+    - Losswise (Monitoring for ML)
+    - Comet: lets you track code, experiments, and results on ML projects
+    - Weights & Biases: Record and visualize every detail of your research with easy collaboration
+
+---
+
+## Experiment Management
+
+- MLFlow Tracking: for logging parameters, code versions, metrics, and output files as well as visualization of the results.
+    - Automatic experiment tracking with one line of code in python
+    - Side by side comparison of experiments
+    - Hyper parameter tuning
+    - Supports Kubernetes based jobs
+
+---
+
+## Hyperparameter Tuning
+
+- Approaches:
+    - Grid search
+    - Random search
+    - Bayesian Optimization
+    - HyperBand and Asynchronous Successive Halving Algorithm (ASHA)
+    - Population-based Training
+
+---
+
+## Hyperparameter Tuning
+
+- RayTune
+- Katib
+- Hyperas
+- SIGOPT
+- Sweeps
+- Keras Tuner
+
+<Notes>
+- RayTune: Ray Tune is a Python library for hyperparameter tuning at any scale (with a focus on deep learning and deep reinforcement learning). Supports any machine learning framework, including PyTorch, XGBoost, MXNet, and Keras.
+- Katib: Kubernete's Native System for Hyperparameter Tuning and Neural Architecture Search, and supports multiple ML/DL frameworks (e.g. TensorFlow, MXNet, and PyTorch).
+- Hyperas: a simple wrapper around hyperopt for Keras, with a simple template notation to define hyper-parameter ranges to tune.
+- SIGOPT: a scalable, enterprise-grade optimization platform
+- Sweeps: Parameters are not explicitly specified by a developer. Instead they are approximated and learned by a machine learning model.
+- Keras Tuner: A hyperparameter tuner for Keras, specifically for tf.keras with TensorFlow 2.0.
+</Notes>
+
+---
+
+## Distributed Training
+
+- Data parallelism: Use it when iteration time is too long (both tensorflow and PyTorch support)
+    - Ray Distributed Training
+    - Horovod
+- Model parallelism: when model does not fit on a single GPU
+
+---
+
+## Testing and Deployment
+
+1. Testing and CI/CD
+2. Web Deployment
+3. Service Mesh and Traffic Routing
+4. Monitoring
+5. Deploying on Embedded and Mobile Devices
+
+---
+
+## Testing and CI/CD
+
+import cicd from './assets/testing-cicd.png'
+
+<img src={cicd} />
+
+---
+
+## Testing and CI/CD
+
+- Unit and Integration Testing:
+    - Types of tests:
+        - Training system tests: testing training pipeline
+        - Validation tests: testing prediction system on validation set
+        - Functionality tests: testing prediction system on few important examples
+- Continuous Integration: Running tests after each new code change pushed to the repo
+
+---
+
+## Testing and CI/CD
+
+- SaaS for continuous integration:
+    - Argo: Open source Kubernetes native workflow engine for orchestrating parallel jobs (incudes workflows, events, CI and CD).
+    - CircleCI: Language-Inclusive Support, Custom Environments, Flexible Resource Allocation, used by instacart, Lyft, and StackShare.
+    - Travis CI
+    - Buildkite: Fast and stable builds, Open source agent runs on almost any machine and architecture, Freedom to use your own tools and services
+    - Jenkins: Old school build system
+
+---
+
+## Web Deployment
+
+- Consists of a Prediction System and a Serving System
+    - Prediction System: Process input data, make predictions
+    - Serving System (Web server):
+        - Serve prediction with scale in mind
+        - Use REST API to serve prediction HTTP requests
+        - Calls the prediction system to respond
+
+---
+
+## Web Deployment
+
+- Serving options:
+    - Deploy to VMs, scale by adding instances
+    - Deploy as containers, scale via orchestration
+        - Containers
+            - Docker
+        - Container Orchestration:
+            - Kubernetes (the most popular now)
+            - MESOS
+            - Marathon
+    - Deploy code as a "serverless function"
+    - Deploy via a model serving solution
+    
+---
+
+## Web Deployment
+
+- Model serving:
+    - Specialized web deployment for ML models
+    - Batches request for GPU inference
+    - Frameworks:
+        - Tensorflow serving
+        - MXNet Model server
+        - Clipper (Berkeley)
+        - SaaS solutions
+            - Seldon: serve and scale models built in any framework on Kubernetes
+            - Algorithmia
+- Deploying Jupyter Notebooks:
+    - Kubeflow Fairing is a hybrid deployment package that let's you deploy your Jupyter notebook codes!
+
+---
+
+## Web Deployment
+
+- Decision making: CPU or GPU?
+    - CPU inference:
+        - CPU inference is preferable if it meets the requirements.
+        - Scale by adding more servers, or going serverless.
+    - GPU inference:
+        - TF serving or Clipper
+        - Adaptive batching is useful
+
+---
+
+## Service Mesh and Traffic Routing
+
+- Transition from monolithic applications towards a distributed microservice architecture could be challenging.
+- A Service mesh (consisting of a network of microservices)
+    - reduces the complexity of such deployments, and eases the strain on development teams.
+    - Istio: a service mesh to ease creation of a network of deployed services
+        - load balancing
+        - service-to-service authentication
+        - monitoring
+        - with few or no code changes in service code.
+
+---
+
+## Monitoring
+
+- Purpose of monitoring:
+    - Alerts for downtime, errors, and distribution shifts
+    - Catching service and data regressions
+- Cloud providers solutions are decent
+- Kiali: observability console for Istio with service mesh configuration capabilities.
+    - It answers these questions: How are the microservices connected? How are they performing?
+
+---
+
+## Deploying on Embedded and Mobile Devices
+
+- Main challenge: memory footprint and compute constraints
+- Solutions:
+    - Quantization
+    - Reduced model size
+        - MobileNets
+    - Knowledge Distillation
+        - DistillBERT (for NLP)
+        
+---
+
+## Deploying on Embedded and Mobile Devices
+
+- Embedded and Mobile Frameworks:
+    - Tensorflow Lite
+    - PyTorch Mobile
+    - Core ML
+    - ML Kit
+    - FRITZ
+    - OpenVINO
+- Model Conversion:
+    - Open Neural Network Exchange (ONNX):
+        - open-source format for deep learning models
+
+---
+
+## Post Deployment
+
+import postDeploy from './assets/post-deploy.png'
+
+<img src={postDeploy} />
+
+---
+
+## Though Python is the King, Go can be the Minister
+
+- Python is the King for S/W 2.0
+- To actually run a production system at scale -> need infra that implement
+    - Autoscaling -> traffic fluctuation don't break API
+    - API management -> handle simultaneous API deployment
+    - Rolling update -> update models while still serving user
+    - Logging
+    - Cost optimization
+
+---
+
+## Why Go?
+
+- Concurrency is crucial for S/W 2.0 infrastructure
+    - Wrangle few different APIs
+    - Can be used to programmatically calls these APIs to provision cluster, launch deployment, and monitor APIs
+        - Challenging to have performant, reliable.
+    - Go has goroutines + channels
+- Build cross-platform CLI is easier in Go
+- Go ecosystem is great for infrastructure projects
+- Go is just a pleasure to work with
+    - Good for large project
+    - Fast compilation, static typing and great tooling
+
+---
+
+## Go Case Study: Data Processing Pipeline
 
 ---
 
 <CodeSurfer>
 
-```js title="This is a title" subtitle="and this a subtitle"
-function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null ? 0 : ipsum.sit;
-  dolor = sit - amet(dolor);
-  return sit
-    ? consectetur(ipsum, 0, dolor < 0 ? 0 : dolor)
-    : [];
-}
-
-function incididunt(ipsum, ut = 1) {
-  ut = labore.et(amet(ut), 0);
-  const sit = ipsum == null ? 0 : ipsum.sit;
-
-  if (!sit || ut < 1) {
-    return [];
-  }
-
-  let dolore = 0;
-  let magna = 0;
-  const aliqua = new eiusmod(labore.ut(sit / ut));
-
-  while (dolore < sit) {
-    aliqua[magna++] = consectetur(
-      ipsum,
-      dolore,
-      (dolore += ut)
-    );
-  }
-
-  return aliqua;
+```go title="Message"
+type Payload interface {
+    Clone() Payload
+    MarkAsProcessed()
 }
 ```
 
-```js
-function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null ? 0 : ipsum.sit;
-  dolor = sit - amet(dolor);
-  return sit
-    ? consectetur(ipsum, 0, dolor < 0 ? 0 : dolor)
-    : [];
-}
-
-function adipiscing(...elit) {
-  if (!elit.sit) {
-    return [];
-  }
-
-  const sed = elit[0];
-  return eiusmod.tempor(sed) ? sed : [sed];
-}
-
-function incididunt(ipsum, ut = 1) {
-  ut = labore.et(amet(ut), 0);
-  const sit = ipsum == null ? 0 : ipsum.sit;
-
-  if (!sit || ut < 1) {
-    return [];
-  }
-
-  let dolore = 0;
-  let magna = 0;
-  const aliqua = new eiusmod(labore.ut(sit / ut));
-
-  while (dolore < sit) {
-    aliqua[magna++] = consectetur(
-      ipsum,
-      dolore,
-      (dolore += ut)
-    );
-  }
-
-  return aliqua;
-}
+```diff 1[6:13] subtitle="Implemented by values that can be sent through a pipeline."
 ```
 
-```diff 1[10:14],2[15:19],3[22:27],10:12
+```diff 2 subtitle="Returns a new Payload that is a deep-copy of the original."
+```
 
+```diff 3 subtitle="Invoked by the pipeline when the Payload either reaches the pipeline sink or it gets discarded by one of the pipeline stages."
+```
+
+```diff
 ```
 
 </CodeSurfer>
 
 ---
 
-<CodeSurferColumns themes={[vsDark, github]}>
+<CodeSurfer>
 
-<Step>
+```go title="Stateless + Stateful Execution Unit"
+type Processor interface {
+    Process(context.Context, Payload) (Payload, error)
+}
 
-```js
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
+type ProcessorFunc func(context.Context, Payload) (Payload, error)
+
+func (f ProcessorFunc) Process(ctx context.Context, p Payload) (Payload, error) {
+    return f(ctx, p)
+}
 ```
 
-```js
-const minim = (ad, enim) => dolore.magna(ad / enim);
+```diff 1 subtitle="Implemented by types that can process Payloads as part of a pipeline stages."
 ```
 
-</Step>
-
-<Step>
-
-```js
-const lorem = (ipsum, dolor, sit) => {
-  const amet = dolor - ipsum;
-  return consectetur.adipiscing(
-    {
-      elit: sed.eiusmod(sit - dolor) / amet + 2,
-    },
-    (tempor, incididunt) => ipsum + amet * incididunt
-  );
-};
-
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
+```diff 2 subtitle="Operates on the input payload and returns back a new payload to be forwarded to the next pipeline stages. Processors may also opt to prevent the payload from reaching the rest of the pipeline by returning a nil payload value instead."
 ```
 
-```js
-const minim = (ad, enim) => dolore.magna(ad / enim);
-
-const sed = (eiusmod, tempor, incididunt) => {
-  const ut = tempor - eiusmod;
-  return labore.et(
-    {
-      amet: dolore.magna(incididunt - tempor) / ut + 2,
-    },
-    (aliqua, elit) => eiusmod + ut * elit
-  );
-};
+```diff 5 subtitle="Adapter to allow the use of plain functions as Processor instances. If f is a function with the appropriate signature, ProcessorFunc(f) is a Processor that calls f."
 ```
 
-</Step>
+```diff 7:9 subtitle="Calls f(ctx, p)."
+```
 
-</CodeSurferColumns>
+```diff
+```
+
+</CodeSurfer>
 
 ---
 
-docs:  
-[codesurfer.pomb.us](https://codesurfer.pomb.us)
+<CodeSurfer>
+
+```go title="Stage"
+type StageParams interface {
+	StageIndex() int
+	Input() <-chan Payload
+	Output() chan<- Payload
+	Error() chan<- error
+}
+
+type StageRunner interface {
+	Run(context.Context, StageParams)
+}
+```
+
+```diff 1[6:17] subtitle="Encapsulates the information required for executing a pipeline stage. The pipeline passes a StageParams instance to the Run() method of each stage."
+```
+
+```diff 2 subtitle="Returns the position of this stage in the pipeline."
+```
+
+```diff 3 subtitle="Returns a channel for reading the input payloads for a stage."
+```
+
+```diff 4 subtitle="Returns a channel for writing the output payloads for a stage."
+```
+
+```diff 5 subtitle="Returns a channel for writing errors that were encountered by a stage while processing payloads."
+```
+
+```diff 8[6:17] subtitle="Implemented by types that can be strung together to form a multi-stage pipeline"
+```
+
+```diff 9 subtite="Implements the processing logic for this stage by reading incoming Payloads from an input channel, processing them and outputting the results to an output channel."
+```
+
+```diff
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="Source and Sink"
+type Source interface {
+	Next(context.Context) bool
+	Payload() Payload
+	Error() error
+}
+
+type Sink interface {
+	Consume(context.Context, Payload) error
+}
+```
+
+```diff 1[6:12] subtitle="Implemented by types that generate Payload instances which can be used as inputs to a Pipeline instance."
+```
+
+```diff 2 subtitle="Fetches the next payload from the source. If no more items are available or an error occurs, calls to Next return false."
+```
+
+```diff 3 subtitle="Returns the next payload to be processed."
+```
+
+```diff 4 subtitle="Return the last error observed by the source."
+```
+
+```diff 7[6:10] subtitle="Implemented by types that can operate as the tail of a pipeline."
+```
+
+```diff 8 subtitle="Processes a Payload instance that has been emitted out of a Pipeline instance."
+```
+
+```diff
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="Source Worker"
+func sourceWorker(ctx context.Context, source Source, outCh chan<- Payload, errCh chan<- error) {
+	for source.Next(ctx) {
+		payload := source.Payload()
+		select {
+		case outCh <- payload:
+		case <-ctx.Done():
+			return
+		}
+	}
+
+	if err := source.Error(); err != nil {
+		wrappedErr := xerrors.Errorf("pipeline source: %w", err)
+		maybeEmitError(wrappedErr, errCh)
+	}
+}
+```
+
+```diff 1
+```
+
+```diff 2:9
+```
+
+```diff 11:14
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="Sink Worker"
+func sinkWorker(ctx context.Context, sink Sink, inCh <-chan Payload, errCh chan<- error) {
+	for {
+		select {
+		case payload, ok := <-inCh:
+			if !ok {
+				return
+			}
+
+			if err := sink.Consume(ctx, payload); err != nil {
+				wrappedErr := xerrors.Errorf("pipeline sink: %w", err)
+				maybeEmitError(wrappedErr, errCh)
+				return
+			}
+			payload.MarkAsProcessed()
+		case <-ctx.Done():
+			return
+		}
+	}
+}
+```
+
+```diff 1
+```
+
+```diff 2:18
+```
+
+```diff 3:17
+```
+
+```diff
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="Pipeline"
+type Pipeline struct {
+	stages []StageRunner
+}
+
+func New(stages ...StageRunner) *Pipeline { return &Pipeline{stages: stages} }
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="Pipeline Process"
+func (p *Pipeline) Process(ctx context.Context, source Source, sink Sink) error {
+	var wg sync.WaitGroup
+	pCtx, ctxCancelFn := context.WithCancel(ctx)
+
+	stageCh := make([]chan Payload, len(p.stages)+1)
+	errCh := make(chan error, len(p.stages)+2)
+	for i := 0; i < len(stageCh); i++ {
+		stageCh[i] = make(chan Payload)
+	}
+
+	for i := 0; i < len(p.stages); i++ {
+		wg.Add(1)
+		go func(stageIndex int) {
+			p.stages[stageIndex].Run(pCtx, &workerParams{
+				stage: stageIndex,
+				inCh:  stageCh[stageIndex],
+				outCh: stageCh[stageIndex+1],
+				errCh: errCh,
+			})
+
+			close(stageCh[stageIndex+1])
+			wg.Done()
+		}(i)
+	}
+
+	wg.Add(2)
+	go func() {
+		sourceWorker(pCtx, source, stageCh[0], errCh)
+
+		close(stageCh[0])
+		wg.Done()
+	}()
+
+	go func() {
+		sinkWorker(pCtx, sink, stageCh[len(stageCh)-1], errCh)
+		wg.Done()
+	}()
+
+	go func() {
+		wg.Wait()
+		close(errCh)
+		ctxCancelFn()
+	}()
+
+	var err error
+	for pErr := range errCh {
+		err = multierror.Append(err, pErr)
+		ctxCancelFn()
+	}
+	return err
+}
+```
+
+```diff 1
+```
+
+```diff 2
+```
+
+```diff 5:9
+```
+
+```diff 11:24
+```
+
+```diff 26:50
+```
+
+```diff 
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="FIFO"
+type fifo struct {
+	proc Processor
+}
+
+func FIFO(proc Processor) StageRunner { return fifo{proc: proc} }
+
+func (r fifo) Run(ctx context.Context, params StageParams) {
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case payloadIn, ok := <-params.Input():
+			if !ok {
+				return
+			}
+
+			payloadOut, err := r.proc.Process(ctx, payloadIn)
+			if err != nil {
+				wrappedErr := xerrors.Errorf("pipeline stage %d: %w", params.StageIndex(), err)
+				maybeEmitError(wrappedErr, params.Error())
+				return
+			}
+
+			if payloadOut == nil {
+				payloadIn.MarkAsProcessed()
+				continue
+			}
+
+			select {
+			case params.Output() <- payloadOut:
+			case <-ctx.Done():
+				return
+			}
+		}
+	}
+}
+```
+
+```diff 1:3
+```
+
+```diff 20:33
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="Fixed Worker Pool"
+type fixedWorkerPool struct {
+	fifos []StageRunner
+}
+
+func FixedWorkerPool(proc Processor, numWorkers int) StageRunner {
+	if numWorkers <= 0 {
+		panic("FixedWorkerPool: numWorkers must be > 0")
+	}
+
+	fifos := make([]StageRunner, numWorkers)
+	for i := 0; i < numWorkers; i++ {
+		fifos[i] = FIFO(proc)
+	}
+
+	return &fixedWorkerPool{fifos: fifos}
+}
+
+func (p *fixedWorkerPool) Run(ctx context.Context, params StageParams) {
+	var wg sync.WaitGroup
+
+	for i := 0; i < len(p.fifos); i++ {
+		wg.Add(1)
+		go func(fifoIndex int) {
+			p.fifos[fifoIndex].Run(ctx, params)
+			wg.Done()
+		}(i)
+	}
+
+	wg.Wait()
+}
+```
+
+```diff 19:29
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+
+```go title="Dynamic Worker Pool"
+type dynamicWorkerPool struct {
+	proc      Processor
+	tokenPool chan struct{}
+}
+
+func DynamicWorkerPool(proc Processor, maxWorkers int) StageRunner {
+	if maxWorkers <= 0 {
+		panic("DynamicWorkerPool: maxWorkers must be > 0")
+	}
+
+	tokenPool := make(chan struct{}, maxWorkers)
+	for i := 0; i < maxWorkers; i++ {
+		tokenPool <- struct{}{}
+	}
+
+	return &dynamicWorkerPool{proc: proc, tokenPool: tokenPool}
+}
+
+func (p *dynamicWorkerPool) Run(ctx context.Context, params StageParams) {
+stop:
+	for {
+		select {
+		case <-ctx.Done():
+			break stop
+		case payloadIn, ok := <-params.Input():
+			if !ok {
+				break stop
+			}
+
+			var token struct{}
+			select {
+			case token = <-p.tokenPool:
+			case <-ctx.Done():
+				break stop
+			}
+
+			go func(payloadIn Payload, token struct{}) {
+				defer func() { p.tokenPool <- token }()
+				payloadOut, err := p.proc.Process(ctx, payloadIn)
+				if err != nil {
+					wrappedErr := xerrors.Errorf("pipeline stage %d: %w", params.StageIndex(), err)
+					maybeEmitError(wrappedErr, params.Error())
+					return
+				}
+
+				if payloadOut == nil {
+					payloadIn.MarkAsProcessed()
+					return
+				}
+
+				select {
+				case params.Output() <- payloadOut:
+				case <-ctx.Done():
+				}
+			}(payloadIn, token)
+		}
+	}
+
+	for i := 0; i < cap(p.tokenPool); i++ {
+		<-p.tokenPool
+	}
+}
+```
+
+```diff 1:4
+```
+
+```diff 6:17
+```
+
+```diff 23:55
+```
+
+```diff 59:61
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go title="Broadcast"
+type broadcast struct {
+	fifos []StageRunner
+}
+
+func Broadcast(procs ...Processor) StageRunner {
+	if len(procs) == 0 {
+		panic("Broadcast: at least one processor must be specified")
+	}
+
+	fifos := make([]StageRunner, len(procs))
+	for i, p := range procs {
+		fifos[i] = FIFO(p)
+	}
+
+	return &broadcast{fifos: fifos}
+}
+
+func (b *broadcast) Run(ctx context.Context, params StageParams) {
+	var (
+		wg   sync.WaitGroup
+		inCh = make([]chan Payload, len(b.fifos))
+	)
+
+	for i := 0; i < len(b.fifos); i++ {
+		wg.Add(1)
+		inCh[i] = make(chan Payload)
+		go func(fifoIndex int) {
+			fifoParams := &workerParams{
+				stage: params.StageIndex(),
+				inCh:  inCh[fifoIndex],
+				outCh: params.Output(),
+				errCh: params.Error(),
+			}
+			b.fifos[fifoIndex].Run(ctx, fifoParams)
+			wg.Done()
+		}(i)
+	}
+done:
+	for {
+		select {
+		case <-ctx.Done():
+			break done
+		case payload, ok := <-params.Input():
+			if !ok {
+				break done
+			}
+			for i := len(b.fifos) - 1; i >= 0; i-- {
+				var fifoPayload = payload
+				if i != 0 {
+					fifoPayload = payload.Clone()
+				}
+				select {
+				case <-ctx.Done():
+					break done
+				case inCh[i] <- fifoPayload:
+				}
+
+			}
+		}
+	}
+
+	for _, ch := range inCh {
+		close(ch)
+	}
+	wg.Wait()
+}
+```
+
+```diff 1:3
+```
+
+```diff 5:16
+```
+
+```diff 24:37
+```
+
+```diff 39:60
+```
+
+```diff 62:65
+```
+
+```diff
+```
+
+</CodeSurfer>
+
+---
+
+Thanks
+
+---
